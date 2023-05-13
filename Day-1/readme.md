@@ -40,7 +40,7 @@ Also, unlike let or var, a const variable must be assigned a value when declared
 
 ## Scopes in var let and const
 
-    var is a keyword used for declaring variables in JavaScript. It has function scope, meaning that variables declared with var are accessible anywhere within the in which they are declared. However, if a var variable is declared outside of any function, it becomes globally scoped and is accessible anywhere in the code.
+var is a keyword used for declaring variables in JavaScript. It has function scope, meaning that variables declared with var are accessible anywhere within the in which they are declared. However, if a var variable is declared outside of any function, it becomes globally scoped and is accessible anywhere in the code.
 
 ```js
 const userName = "Max"
