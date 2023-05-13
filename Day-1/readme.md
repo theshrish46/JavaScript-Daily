@@ -72,5 +72,5 @@ In summary, var has function scope and can be hoisted, let and const have block 
 | Reassign     | Yes            | Yes         | No          |
 | Redeclare    | Yes            | No          | No          |
 | Global Scope | Yes            | No          | No          |
-=======
+
 In summary, var has function scope and can be hoisted, let and const have block scope and are not hoisted. let allows reassignment while const does not.
