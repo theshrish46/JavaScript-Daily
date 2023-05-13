@@ -2,7 +2,6 @@
 
 A simple explanation of var let and const in JavaScript
 
-
 ## What is var?
 In JavaScript, var is a keyword used to declare variables. Variables declared with var are function-scoped, meaning they can be accessed anywhere within their declared function. If a variable is declared with var outside of a function, it becomes a global variable and can be accessed anywhere in the code.
 
@@ -38,6 +37,11 @@ In JavaScript, the const keyword is used to declare variables that cannot be rea
 
 Also, unlike let or var, a const variable must be assigned a value when declared. Additionally, const variables have block scope, meaning they are only accessible within the block they were defined in.
 
+
+## Scopes in var let and const
+
+    var is a keyword used for declaring variables in JavaScript. It has function scope, meaning that variables declared with var are accessible anywhere within the in which they are declared. However, if a var variable is declared outside of any function, it becomes globally scoped and is accessible anywhere in the code.
+
 ```js
 const userName = "Max"
 function greet(name) {
@@ -51,9 +55,22 @@ greet(userName) // Hello Manu because of the block scope of let
 
 
 var is a keyword used for declaring variables in JavaScript. It has function scope, meaning that variables declared with var are accessible anywhere within the in which they are declared. However, if a var variable is declared outside of any function, it becomes globally scoped and is accessible anywhere in the code.
+main
 
 let and const are keywords introduced in ECMAScript 6 and they have block scope, meaning that they are only accessible within the block in which they are declared. A block is defined by a pair of curly braces ({...}) and can be a loop, or conditional statement.
 
 let allows the variable to be reassigned, whereas const declares a variable that cannot be reassigned after its initial assignment. However, it's important to note that const only makes the variable itself immutable, not its properties or if it is an object or array.
 
+In summary, var has function scope and can be hoisted, let and const have block scope and are not hoisted. let allows reassignment while const does not.
+
+## Some differences between var, let, and const
+
+| Type         | var            | let         | const       |
+| ------------ | -------------- | ----------- | ----------- |
+| Scope        | function scope | block scope | block scope |
+| Hoisted      | Yes            | No          | No          |
+| Reassign     | Yes            | Yes         | No          |
+| Redeclare    | Yes            | No          | No          |
+| Global Scope | Yes            | No          | No          |
+=======
 In summary, var has function scope and can be hoisted, let and const have block scope and are not hoisted. let allows reassignment while const does not.
