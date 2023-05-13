@@ -9,11 +9,13 @@ In JavaScript, var is a keyword used to declare variables. Variables declared wi
 One thing to be aware of when using var is hoisting. var declarations are hoisted to the top of their scope, meaning that even if a var declaration appears later in the code, it will still be treated as if it was declared at the beginning of the scope. This can lead to unexpected behavior and bugs.
 
 While var is still supported in modern JavaScript, it has largely been replaced by let and const, which have more predictable scoping behavior.
+```js 
 var userName = "Shrish"
 function greet(name) {
     console.log("Good Morning" + name)
 }
 greet(userName) // Output Good Morning Shrish
+```
 
 ### What is let?
 
@@ -21,13 +23,14 @@ In JavaScript, let is a keyword used to declare variables. Variables declared wi
 
 One benefit of using let over var is that it can help prevent bugs and unintended behavior caused by global variables. let also allows for variable reassignment, meaning you can change the value of a let variable throughout the code. Overall, let provides a more predictable scoping behavior and can help make code easier to read and maintain.
 
+```js
 let userName = "Max"
 function greet(name) {
     let name = "Manu"
     console.log("Hello " + name)
 }
 greet(userName) // Hello Manu because of the block scope of let
-
+```
 
 ### What is const?
 
@@ -35,12 +38,14 @@ In JavaScript, the const keyword is used to declare variables that cannot be rea
 
 Also, unlike let or var, a const variable must be assigned a value when declared. Additionally, const variables have block scope, meaning they are only accessible within the block they were defined in.
 
+```js
 const userName = "Max"
 function greet(name) {
     let name = "Manu"
     console.log("Hello " + name)
 }
 greet(userName) // Hello Manu because of the block scope of let
+```
 
 ## Scopes in var let and const
 
